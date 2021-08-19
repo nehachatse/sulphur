@@ -1,0 +1,181 @@
+*{
+    margin: 0px;
+    padding: 0%;
+}
+body{
+    background-color: white;
+}
+.header,.footer{
+    height: 80px;
+    width: 100%;
+    transition: 0.5s;
+    background-color: white;
+    text-align-last: center;
+}
+.active{
+    position: fixed;
+    background-color: teal;
+    box-shadow: 0px 10px rgba(83, 129, 129, 0.178);
+}
+.footer{
+    height: 200px;
+    background: tomato;
+}
+.container{
+    height: 3400px;
+    width: 65%;
+    margin:auto;
+}
+/* Starting with main content */
+/* giving the heading part its height and width */
+.heading{
+    height: 7%;
+    width: 65%;
+    padding-top: 6%;
+    margin: auto;
+}
+.heading>h1,.heading>p{
+    text-align: center;
+    font-size: 18px;
+    color: rgba(41, 40, 40, 0.952);
+    word-spacing: 2px;
+}
+.heading>h1{
+    font-size: 300%;
+    font-weight: 400;
+    margin-bottom: 2.5%;
+    word-spacing: 7px;
+}
+/* bloging post area style */
+.blog_area{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+.post_area{
+    height: 100%;
+    width: 69%;
+}
+.ad_area{
+    height: 45%;
+    width: 26%;
+    margin-left: 5%;
+}
+/* big post style goes here */
+.big_post{
+    height: 23%;
+    width: 100%;
+    margin-bottom: 6%;
+    border: gray solid 1px;
+}
+.big_post>h6,.big_post>h2,.big_post>p{
+    font-size: 13px;
+    margin:3%;
+    line-height: 130%;
+    word-spacing: 3px;
+}
+.big_post>h6>span{
+    color:mediumblue;
+}
+.big_post>h2{
+    font-size: 37px;
+    font-weight: 400;
+}
+.big_post>p{
+    font-size: 18px;
+    opacity: .6;
+}
+.big_post>img{
+    width: 100%;
+    height: 54%;
+}
+/* small post grid style goes here */
+.grid{
+    height: 75%;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,49%);
+    grid-template-rows: repeat(5,19.25%);
+}
+.grid>div{
+    border: rgba(145, 142, 142, 0.671) solid 1px;
+}
+.grid>div>img{
+    height: 50%;
+    width: 100%;
+}
+.grid>div>h6,.grid>div>h2{
+    font-size: 13px;
+    margin:3%;
+    line-height: 130%;
+    word-spacing: 3px;
+}
+.grid>div>h6>span{
+    color:mediumblue;
+}
+.grid>div>h2{
+    font-size: 27px;
+    font-weight: 400;
+}
+/* blog post's side area(ad & form) style starts here  */
+.form{
+    height: 36%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.form>h3{
+    height: 33%;
+    width: 100%;
+    margin-bottom: 3%;
+    font-size: 35px;
+    font-weight: 500;
+}
+form{
+    width: 100%;
+    height: 65%;
+}
+form>input{
+    height: 13%;
+    width: 90%;
+    margin-bottom: 2.5%;
+}
+form>label{
+font-size: 10px;
+}
+form>input[type="checkbox"]{
+    height: auto;
+    width: auto;
+    margin: 0px;
+}
+form>input[type="button"]{
+    height: 17%;
+    background-color: blue;
+    font-size: 20px;
+    color: white;
+}
+/* two picture ad style  */
+.ad{
+    width: 100%;
+    height: 24%;
+    margin-bottom: 9%;
+}
+.ad_area img{
+    height: 100%;
+    width: 100%;
+}
+#follow{
+    width: 100%;
+    height: 10%;
+    margin-bottom: 0px;
+}
+#follow>div{
+    width: 100%;
+    height: 100%;
+    border: gray solid 1px;
+}
+#follow>div>h1{
+    height: 40%;
+    text-align: center;
+    font-weight: 500;
+}
