@@ -188,7 +188,6 @@ form>input[type="button"]{
 .pages{
     height: 3%;
     width: 100%;
-    border: black solid 1px;
 }
 .pages>div{
     padding: 5px;
