@@ -1,19 +1,23 @@
 *{
-    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Open Sans Condensed', sans-serif;
 }
+/*Contact page css*/
 /* First main Div Style*/
 #contact-body{    
     width: 90%;
     margin: 40px auto;
 }
-.contact-info{
+.align{
     text-align: center;
 }
 .cont-headlines{
-    font-size: 60px;
+    font-size: 65px;
+    word-spacing: 5px;
 }
 .cont-details{
     font-size: 20px;
+    letter-spacing: 1px;
+    word-spacing: 5px;
     color: rgb(48,48,48);
     margin-top: 20px;
 }
@@ -101,14 +105,16 @@
     margin: 0 auto;
 }
 .contact-loc-info{
-    width: 82%;
-    margin: auto;
+    display: flex;
+    margin-left: 12%;
 }
 .contact-loc-info > div{
     width: 30%;
-    margin: 1%;
+    margin: 2.5%;
     float: left;
-
+}
+.inDistace{
+    margin-bottom: 50px;
 }
 .contact-addr{
     width: 100%;
@@ -122,4 +128,106 @@
 img{
     width: 100%;
     display: block;
+}
+
+
+/*Solution-PPC page CSS*/
+
+.sol-main-div-1{
+    display: flex;
+    width: 80%;
+    margin: 100px auto;
+}
+.sol-main-div-1, .div-2 > div{
+    flex-basis: 50%; 
+}
+.btn-a{
+    width: 90%;
+    height: 50px;
+    margin-top: 50px;
+}
+.btn-a > a{
+    width: 100%;
+    height: 100%;
+    padding: 4% 20%;
+    text-decoration: none;
+    letter-spacing: 1px;
+    color: white;
+    font-weight: bold;
+    background-color: blue;
+    font-size: 22px;
+}
+.btn-a :hover{
+    background-color: rgb(19, 19, 177);
+}
+.img-div > img{
+    width: 100%;   
+}
+.width{
+    width: 75%;
+    margin: 30px auto;
+}
+.div-2{
+    width: 90%;
+    margin: 50px auto;
+}
+.div-2-cont{
+    display: flex;
+}
+.div-2-cont > div{
+    flex-basis: 47%;
+    margin: 2%;
+}
+.div-2-cont > div > div{
+    margin-bottom: 30px;
+}
+.leaders{
+    display: flex; 
+    width: 100%; 
+    margin-top: 100px;
+}
+.lead-img{
+    width: 15%;
+}
+.lead-quot{
+    width: 80%; 
+    padding-left: 2%;
+}
+.lead-quot :first-child{
+    font-size: 40px; 
+    margin: 0;
+}
+.border1{
+    width: 7%;
+    height: 10px;
+    margin: 0 45% 20px;
+    background-color: rgb(255,161,161);
+}
+.btn2{
+    width: 25%;
+    margin: 50px 38% 20px;
+}
+.div-color{
+    width: 90%;
+    height: 250px;
+    margin: 0px;
+    background-color: blue;
+    padding: 5%;
+}
+
+.btn-clr > a{
+    background-color: white;
+    color: blue;
+}
+.btn-clr :hover{
+    color: white;
+    background-color: blue;
+    border: 1px solid white;
+}
+.clr{
+    font-size: 80px;
+    color: rgb(255,161,161);
+}
+.check ::before{
+    content: url('https://image.flaticon.com/icons/png/128/4727/4727266.png')
 }
