@@ -23,16 +23,19 @@ body{
 }
 .container{
     height: 3400px;
+    min-width: 1000px;
     width: 65%;
     margin:auto;
 }
 /* Starting with main content */
 /* giving the heading part its height and width */
 .heading{
-    height: 7%;
+    height: 9%;
+    max-height: 238px;
     width: 65%;
+    min-width: 1055px;
     padding-top: 6%;
-    margin: auto;
+    margin: 0% auto 6%;
 }
 .heading>h1,.heading>p{
     text-align: center;
@@ -41,7 +44,7 @@ body{
     word-spacing: 2px;
 }
 .heading>h1{
-    font-size: 300%;
+    font-size: 450%;
     font-weight: 400;
     margin-bottom: 2.5%;
     word-spacing: 7px;
@@ -78,8 +81,10 @@ body{
     color:mediumblue;
 }
 .big_post>h2{
-    font-size: 37px;
+    font-size: 2.3em;
+    max-width: 666px;
     font-weight: 400;
+    inline-size: max-content;
 }
 .big_post>p{
     font-size: 18px;
@@ -178,4 +183,173 @@ form>input[type="button"]{
     height: 40%;
     text-align: center;
     font-weight: 500;
+}
+/* pages style */
+.pages{
+    height: 3%;
+    width: 100%;
+    border: black solid 1px;
+}
+.pages>div{
+    padding: 5px;
+    height: 50%;
+    width: 50%;
+    margin-left: 70%;
+    display: grid;
+    grid-template-columns: repeat(6,8%);
+    grid-template-rows: repeat(1,100%);
+    grid-gap: 2px;
+}
+.pages>div>div{
+    border: black solid 1px;
+    padding-top: 40%;
+    text-align: center;
+
+}
+.pages>div>div:nth-child(4){
+    border: none;
+    padding-top: 90%;
+}
+.pages>div>div:nth-child(6){
+    width: 160%;
+}
+@media only screen and (max-width: 1200px) {
+    .container{
+        min-width: 900px;
+        width: 90%;
+        margin:auto;
+    }
+    .heading {
+        width: 60%;
+        min-width: 950px;
+        padding-top: 5%;
+        margin:0% auto 2%;
+    }
+    .heading>h1 {
+        font-size: 400%;
+    }
+    .big_post>h2 {
+        font-size: 2rem;
+        max-width: 600px;
+    }
+    .form>h3{
+        font-size: 2rem;
+    }
+    #follow>div>h1 {
+        font-size: 1.8rem;
+    }
+    .ad_area {
+        width: 30%;
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        min-width: 680px;
+        width: 95%;
+        margin:auto;
+    }
+    .heading {
+        min-width: 650px;
+        padding-top: 4%;
+        margin: 0% auto 1%;
+    }
+    .heading>h1 {
+        font-size: 240%;
+    }
+    .big_post>h2 {
+        font-size: 2rem;
+        max-width: 500px;
+    }
+    .form>h3{
+        font-size: 1.9rem;
+    }
+    #follow>div>h1 {
+        font-size: 1.8rem;
+    }
+    .ad_area {
+        width: 30%;
+        margin-left: 1%;
+    }
+    .grid{
+        grid-gap: 15px;
+    }
+    .grid>div>h2{
+        font-size: 23px;
+        font-weight: 400;
+    }
+    .pages>div{
+        margin-left: 50%;
+        width: 70%;
+    }
+    .pages>div>div{
+        width: 110%;
+    }
+} 
+@media only screen and (max-width: 800px) {
+    .container{
+        min-width: 490px;
+        width: 98%;
+        margin:auto;
+    }
+    .heading {
+        min-width: 500px;
+        padding-top: 4%;
+        margin: 0% auto 1%;
+    }
+    .heading>h1{
+        font-size: 250%;
+    }
+    .lessthan800px{
+        display: none;
+    }
+    .blog_area{
+        display: flex;
+        flex-direction: column;
+    }
+    .post_area{
+        height: 90%;
+        width: 85%;
+        margin: auto;
+    }
+    .ad_area{
+        height: 10%;
+        width:85%;
+        margin:auto;
+    }
+    .big_post>h2 {
+        font-size: 1.5rem;
+        max-width: 500px;
+    }
+    .big_post>p{
+        font-size: 15px;
+        opacity: .6;
+    }
+    .grid{
+        height: 71%;
+        grid-gap: 15px;
+    }
+    .grid>div>h2{
+        font-size: 20px;
+        font-weight: 400;
+    }
+    .form{
+        height: 100%;
+        width: 40%;
+        margin:auto;
+    }
+    .form>h3{
+        height: 29%;
+        width: 100%;
+        margin-bottom: 1%;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+    form{
+        width: 100%;
+        height: 70%;
+    }
+    .pages>div>div{
+        width: 110%;
+    }
 }
