@@ -28,6 +28,11 @@ function bgChangeScrolly() {
 }
 window.addEventListener('scroll', bgChangeScrolly);
 
+// smaller screen image white
+if( window.innerwidth == '770px' ) {
+  console.log('770');
+}
+
 // header list hover block
 var headerList = document.getElementsByClassName('header-list-hover');
 var list = document.getElementsByClassName('products-hover');
@@ -64,9 +69,16 @@ headerList[2].addEventListener('mouseout', () => {
 
 // sidebar
 var navBar = document.getElementById('navbar-menu');
-
+var menu = document.getElementById('menu');
 navBar.addEventListener('click', () => {
-  
+  menu.style.display = 'block';
+})
+
+//close modal
+var close = document.getElementById('modal');
+
+close.addEventListener('click', () => {
+  menu.style.display = 'none';
 })
 
 // footer navigation

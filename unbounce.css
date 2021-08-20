@@ -1093,49 +1093,6 @@ footer div.footer-bottom div.social-media a:nth-child(3) img {
   header > div .navbar-top-right {
     display: none;
   }
-  /* navbar onclick */
-  #menu {
-    display: block;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    height: 1150px;
-    background-color: white;
-    display: none;
-  }
-  #menu > div:nth-child(1) {
-    display: flex;
-    align-items: center;
-    height: 50px;
-    margin-bottom: 30px;
-  }
-  #menu > div:nth-child(1) img[alt="unbounce logo"] {
-    width: 150px;
-  }
-  #menu > div img[alt="search icon"] {
-    width: 18px;
-    height: 18px;
-    margin-left: auto;
-  }
-  #menu > div:nth-child(1) p {
-    font-size: 90px;
-    padding: 0px;
-    margin: 0px 25px 16px;
-  }
-  #menu > div:nth-child(2) {
-    margin-bottom: 10px;
-  }
-  /* #menu > div:nth-child(2) img {
-    margin: 5px auto;
-  } */
-  #menu > div:nth-child(2) input {
-    border: none;
-    padding: 5px 5px;
-    font-size: 17px;    
-  }
-  #menu > div:nth-child(2) input:focus {
-    border: 0px solid transparent;
-  }
   .header-sidebar {
     display: flex;
     align-items: center;
@@ -1305,5 +1262,95 @@ footer div.footer-bottom div.social-media a:nth-child(3) img {
     align-items: center;
     height: 20px;
     margin: 18px auto;
+  }
+}
+
+@media screen and (max-width: 1025px) and (min-width: 300px) {
+  /* navbar onclick */  
+  header.navbar-fixed > div .list,
+  header > div .navbar-top-right {
+    display: none;
+  }
+  #menu {
+    display: block;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 1150px;
+    background-color: white;
+    transition: 2s;
+  }
+  #menu > div:nth-child(1) {
+    display: flex;
+    align-items: center;
+    height: 50px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  #menu > div:nth-child(1) img[alt="unbounce logo"] {
+    width: 150px;
+  }
+  #menu > div img[alt="search icon"] {
+    width: 18px;
+    height: 18px;
+    margin-left: auto;
+  }
+  #menu > div:nth-child(1) p {
+    font-size: 90px;
+    padding: 0px;
+    margin: 0px 25px 16px;
+    cursor: pointer;
+  }
+  #menu > div:nth-child(2) {
+    margin-bottom: 10px;
+  }
+  #menu > div:nth-child(2) input {
+    border: none;
+    padding: 5px 5px 0px;
+    font-size: 17px;
+  }
+  #menu > div:nth-child(2) input:focus {
+    border: 0px solid transparent;
+  }
+  #menu > ul.list {
+    display: block;
+  }
+  #menu > ul.list li {
+    font-size: 18px;
+    margin: 40px 0px;
+  }
+  #menu > a {
+    display: block;
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px 40px;
+    margin: 15px 0px;
+    letter-spacing: 1px;
+  }
+  #menu > a.free {
+    color: white;
+    background-color: #303030;
+  }
+  #menu > a.log {
+    color: #303030;
+    background-color: transparent;
+    border: 2px solid #303030;
+  }
+  #menu > a.free:hover {
+    background-color: rgb(109, 107, 107);
+  }
+  #menu > a.log:hover {
+    color: white;
+    background-color: #303030;
+  }
+  #menu ul.list li:nth-child(1) > a::after,
+  #menu ul.list li:nth-child(2) > a::after,
+  #menu ul.list li:nth-child(4) > a::after {
+    content: "";
+  }
+  #menu {
+    display: none;
   }
 }
