@@ -188,14 +188,15 @@ img{
 
 .sol-main-div-1{
     display: flex;
+    flex-wrap: wrap;
     width: 80%;
     margin: 100px auto;
 }
-.sol-main-div-1, .div-2 > div{
+.sol-main-div-1 > div, .div-2 > div{
     flex-basis: 50%; 
 }
 .btn-a{
-    width: 90%;
+    width: 80%;
     height: 50px;
     margin-top: 50px;
 }
@@ -226,9 +227,10 @@ img{
 }
 .div-2-cont{
     display: flex;
+    flex-wrap: wrap;
 }
 .div-2-cont > div{
-    flex-basis: 47%;
+    flex-basis: 45%;
     margin: 2%;
 }
 .div-2-cont > div > div{
@@ -280,5 +282,72 @@ img{
 .clr{
     font-size: 80px;
     color: rgb(255,161,161);
+}
+
+@media screen and (max-width: 820px) {
+    .sol-main-div-1 > div{
+        flex-basis: 100%;
+    }
+    .cont-headlines{
+        text-align: left;
+        font-size: 50px;
+        word-spacing: 3px;
+    }
+    .cont-details{
+        text-align: left;
+    }
+    img{
+        margin-top: 50px;
+        width: 100%;
+    }
+    .div-2-cont > div{
+        flex-basis: 100%;
+    }
+    .btn2{
+        width: 80%;
+        margin: 50px 20% 20px;
+    }
+    #contact-body-digs{
+        height: 1400px;
+        background-color: rgb(48,48,48);
+    }
+    .contact-loc-info{
+        display: flex;
+        margin-left: 12%;
+        flex-wrap: wrap;
+    }
+    .contact-loc-info > div{
+        flex-basis: 90%;
+        flex-wrap: wrap;
+        margin: 2.5%;
+    }
+    .contact-addr > div{
+        flex-basis: 90%; 
+        margin-bottom: 0;
+    }
+    .div-color{
+        height: 400px;
+    }  
+}
+
+@media screen and (min-width: 821px) and (max-width: 1500px){
+    .cont-headlines{
+        font-size: 50px;
+        word-spacing: 3px;
+    }
+    .btn-a{
+        width: 100%;
+    }
+    .btn2{
+        width: 60%;
+        margin: 50px 30% 20px;
+    }
+    #contact-body-digs{
+        height: 900px;
+        background-color: rgb(48,48,48);
+    }
+    .div-color{
+        height: 350px;
+    } 
 }
 
