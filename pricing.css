@@ -161,3 +161,40 @@ h1>span{
 .plans>.visible{
     display: none;
 }
+/* earnworthy founder */
+.earnworthy {
+    width: 70%;
+    height: 19%;
+    min-width: 1182px;
+    display: flex;
+    margin: 5rem auto 0px;
+  }
+  .earnworthy > img {
+    width: 45%;
+    height: 70%;
+  }
+  .earnworthy div {
+    text-align: left;
+    margin-left: 5%;
+  }
+  .earnworthy div h4 {
+    font-size: 3rem;
+    font-weight: 300;
+    line-height: 3.1rem;
+    margin-top: -2rem;
+  }
+  .earnworthy div h4::before {
+    content: "“";
+  }
+  .earnworthy div h4::after {
+    content: "”";
+  }
+  .earnworthy div p {
+    color: #303030;
+    font-size: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .earnworthy div img {
+    width: 120px;
+  }
