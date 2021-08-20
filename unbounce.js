@@ -51,7 +51,23 @@ list[1].addEventListener('mouseover', () => {
 headerList[1].addEventListener('mouseout', () => {
   list[1].style.display = 'none';
 })
+// learn hover
+headerList[2].addEventListener('mouseover', () => {
+  list[2].style.display = 'flex';
+})
+list[2].addEventListener('mouseover', () => {
+  list[2].style.display = 'flex';
+})
+headerList[2].addEventListener('mouseout', () => {
+  list[2].style.display = 'none';
+})
 
+// sidebar
+var navBar = document.getElementById('navbar-menu');
+
+navBar.addEventListener('click', () => {
+  
+})
 
 // footer navigation
 var footerNav = document.getElementsByClassName('footer-nav');
