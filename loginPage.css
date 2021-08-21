@@ -1,0 +1,164 @@
+/* Universal selector */
+* {
+  margin: 0px;
+  padding: 0px;
+  font-family: "Source Sans Pro", sans-serif;
+  box-sizing: border-box;
+}
+label, input {
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+#invalid {
+  display: flex;
+  visibility: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: #ffd0d0;
+  padding: 20px;
+  transition: 1s;
+}
+#invalid p {
+  font-size: 24px;
+  color: #E26969;
+  margin-left: 8px;
+}
+.login-page {
+  width: 380px;
+  text-align: left;
+  margin: 25px auto 50px;
+}
+.login-page > div:nth-child(1) {
+  height: 170px;
+}
+.login-page div > img {
+  width: 200px;
+  margin-bottom: 60px;
+}
+.login-page h2 {
+  font-size: 21px;
+  font-weight: 300;
+  padding: 15px 0px;
+  color: #606060;
+  border-bottom: 1px solid #dad2d2;
+}
+div.create-account {
+  display: flex;
+  font-size: 14px;
+  margin: 10px 0px 45px;
+}
+div.create-account > p {
+  margin-right: 8px;
+  color: #aaa;
+}
+div.create-account > a {
+  font-weight: bold;
+  color: #0033ff; 
+}
+form > div > label {
+  font-size: 15px;
+  color: #606060;
+  margin: 0px 0px 8px;
+}
+form > div > input {
+  width: 100%;
+  height: 35px;
+  font-size: 15px;
+  padding: 8px;
+  border: 1px solid #c9c8c8;
+  border-radius: 3px;
+}
+input:focus{
+    border: 2px solid #03f;
+    box-shadow: 0 0 1px #1670BE;
+    outline-offset: 0px;
+    outline: none;
+}
+form > div {
+  margin-bottom: 35px;
+}
+form footer > div > div {
+  width: 260px;
+  display: flex;
+}
+form footer > div {
+  display: flex;
+}
+form footer > div input {
+  cursor: pointer;
+  margin: 0px 8px 0px 1px;
+}
+form footer > div p {
+  width: 230px;
+  font-size: 14px;
+  color: gray;
+  margin-right: 6px;
+}
+form footer > div a {
+  font-size: 14px;
+  color: #0033ff;
+}
+div.create-account > a:hover, form footer > div a:hover {
+  text-decoration: underline;
+}
+form footer > a {
+  display: block;
+  width: 100%;
+  height: 57px;
+  padding: 20px 0px 15px;
+  border-radius: 3px;
+}
+form footer > a:nth-child(2) {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 18px;
+  font-weight: 400;
+  color: white;
+  background-color: #0033ff;
+}
+form footer > a:nth-child(2):hover {
+  background-color: rgb(86, 117, 243);
+}
+form footer > p:nth-child(3) {
+  text-align: center;
+  padding: 15px 0px; 
+}
+form footer > a:nth-child(4) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #6d6d6d;
+  box-shadow: 0 0 3px 1px;
+  border: 2px solid transparent;
+  background-color: #fff;
+}
+form footer > a:nth-child(4):hover {
+  background-color: #e0dddd
+}
+form footer > a:nth-child(4) img {
+  width: 20px;
+  margin-right: 8px;
+}
+/* form footer > a:nth-child(4)::before {
+  content: url(https://image.flaticon.com/icons/png/128/281/281764.png);
+} */
+form footer > a:nth-child(4) {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width:450px) {
+  .login-page {
+    width: 85%;
+  }
+  form footer > div {
+    flex-direction: column;
+  }
+  form footer > div a {
+    margin-top: 15px;
+  }
+}
