@@ -263,6 +263,9 @@ header > div .navbar-top-right img {
   margin: 0px 3px;
   background-color: transparent;
 }
+img[alt="search icon"]:hover {
+  cursor: pointer;
+}
 header > div .navbar-top-right button[value="log in"] {
   background-color: transparent;
 }
@@ -303,6 +306,9 @@ header > div .navbar-top-right a[name="log in"] {
   font-weight: 600;
   line-height: 1.56;
   font-family: "Source Sans Pro", sans-serif;
+}
+div.head-para-a b {
+  font-size: 15px;
 }
 .viewport div.head-para-a a {
   text-decoration: none;
@@ -1273,10 +1279,10 @@ footer div.footer-bottom div.social-media a:nth-child(3) img {
   }
   #menu {
     display: block;
-    position: absolute;
+    position: fixed;
     left: 0;
     width: 100%;
-    height: 1150px;
+    height: 99vh;
     background-color: white;
     transition: 2s;
   }
@@ -1306,7 +1312,7 @@ footer div.footer-bottom div.social-media a:nth-child(3) img {
   }
   #menu > div:nth-child(2) input {
     border: none;
-    padding: 5px 5px 0px;
+    padding: 5px 40% 0px 5px;
     font-size: 17px;
   }
   #menu > div:nth-child(2) input:focus {
@@ -1352,5 +1358,99 @@ footer div.footer-bottom div.social-media a:nth-child(3) img {
   }
   #menu {
     display: none;
+  }
+}
+
+/* viewport and paragraph */
+
+@media screen and (max-width: 775px) {
+  .content {
+    margin-top: -150px;
+  }
+  .header-section div.head-para-a {
+    position: static;
+    width: 80%;
+    padding-top: 15vh;
+    margin-left: 0px;
+  }
+  .viewport div.head-para-a h1 {
+    font-size: 5.8rem;
+    padding-left: 85px;
+  }
+  .viewport div.head-para-a div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 100vw;
+    padding: 20px 0px;
+    margin-top: 95%;
+    opacity: 0.8;
+    background-color: lightcoral;
+  }
+  .viewport div.head-para-a div p {
+    width: 43%;
+    margin-left: auto;
+    line-height: 18px;
+    font-size: 13px;
+  }
+  .viewport div.head-para-a div p b {
+    font-size: 12px;
+  }
+  .viewport div.head-para-a div a {
+    margin-left: 5%;
+    margin-right: auto;
+    width: 160px;
+    font-size: 12px;
+    text-align: center;
+  }
+}
+@media screen and (max-width: 770px) {
+  .content {
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 621px) {
+  .viewport div.head-para-a h1 {
+    font-size: 4rem;
+  }
+}
+@media screen and (max-width: 743px) {
+  .viewport div.head-para-a div {
+    margin-top: 92%;
+  }
+}
+@media screen and (max-width: 706px) {
+  .viewport div.head-para-a div {
+    margin-top: 88%;
+  }
+}
+@media screen and (max-width: 663px) {
+  .viewport div.head-para-a div {
+    margin-top: 84%;
+  }
+}
+@media screen and (max-width: 625px) {
+  .viewport div.head-para-a div {
+    margin-top: 80%;
+  }
+}
+@media screen and (max-width: 621px) {
+  .viewport div.head-para-a div {
+    margin-top: 95%;
+  }
+}
+@media screen and (max-width: 584px) {
+  .viewport div.head-para-a div {
+    margin-top: 90%;
+  }
+}
+@media screen and (max-width: 540px) {
+  .viewport div.head-para-a div {
+    margin-top: 86%;
+  }
+}
+@media screen and (max-width: 508px) {
+  .viewport div.head-para-a div {
+    margin-top: 81%;
   }
 }
