@@ -161,3 +161,134 @@ h1>span{
 .plans>.visible{
     display: none;
 }
+/* after content */
+.after-content > div:nth-child(1) {
+    padding: 10px 0px 30px;
+  }
+  /* full width content */
+  .full-width-content {
+    padding: 10px 7% 50px;
+    border-bottom: black solid 2px;
+  }
+  .full-width-content > div {
+      display: block;
+  }
+  .full-width-content > div div {
+    max-width: 48%;
+    margin: auto;
+  }
+  .full-width-content > div div h1 {
+    font-size: 70px;
+    color: #fff;
+    text-align: center;
+    font-weight: 300;
+  }
+  .full-width-content > div div p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 2rem 0px;
+    color: rgb(243, 241, 241);
+  }
+  .full-width-content img {
+    width: 48%;
+  }
+  
+  /* full width content width blue color */
+  .full-width-content-blue {
+      height: 10%;
+      border-bottom: blue solid 2px;
+  }
+  .full-width-content-blue > div {
+    width: 80%;
+    margin:0px auto 20px;
+    display: flex;
+  }
+  .full-width-content-blue > div p {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .full-width-content-blue > div a {
+      margin-top: 20px;
+      height: 18%;
+      width: 40%;
+    text-decoration: none;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-bottom: 2px solid rgb(16, 31, 238);
+  }
+  .full-width-content-blue > div:nth-child(1) a {
+    background-color: white;
+  }
+  .chat{
+      height: 8%;
+      width: 100%;
+      border-bottom: black solid 2px;
+  }
+  .chat>div{
+      width: 80%;
+      height: 100%;
+      margin: auto;
+  }
+  .chat>div>h1{
+      font-size: 3rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 3%;
+  }
+  .chat>div>button{
+      margin-left: 45%;
+      height: 25%;
+      width: 12%;
+  }
+  .line{
+      height: 4px;
+      width: 30px;
+      margin:4.5% auto;
+      background-color: burlywood;
+  }
+  /* earnworthy founder */
+.earnworthy {
+    width: 90%;
+    display: flex;
+    margin: 5rem auto 0px;
+  }
+  .earnworthy > img {
+    max-width: 48%;
+    height: auto;
+    margin: auto;
+  }
+  .earnworthy div {
+    text-align: left;
+    margin-left: 5%;
+  }
+  .earnworthy div h4 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 3.1rem;
+    margin-top: 4rem;
+  }
+  .earnworthy div h4::before {
+    content: "“";
+  }
+  .earnworthy div h4::after {
+    content: "”";
+  }
+  .earnworthy div p {
+    color: #303030;
+    font-size: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .earnworthy div img {
+    width: 120px;
+  }
