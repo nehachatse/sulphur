@@ -10,12 +10,14 @@ var imagesSmall = [
   "https://unbounce.com/photos/get-more-customers-slide-1.webp",
 ];
 var text = ["Conversions", "Relevance", "Confidence"];
+//color change .viewport div.head-para-a div
+var color = ["#27cc90", "#fece00", "#fe9ea1"];
 var time = 4000;
 var i = 0;
 var j = 0;
 
-//slideshow for big screen
 function changeImgText() {
+  //slideshow for big screen
   if (window.innerWidth > "775") {
     document.slide.src = imagesBig[i];
     var t = document.getElementsByClassName("textSlide")[0];
@@ -25,28 +27,23 @@ function changeImgText() {
     } else {
       i = 0;
     }
-  }
-  setTimeout("changeImgText()", time);
-}
-window.addEventListener("load", changeImgText);
-window.addEventListener("resize", changeImgText);
-
-// slideshow for small screen
-function resizeImg() {
-  if (window.innerWidth <= "775") {
+  } 
+  //slideshow for small screen
+  else {
     document.slide.src = imagesSmall[j];
     var t = document.getElementsByClassName("textSlide")[0];
+    var small = document.getElementsByClassName('small-screen-para')[0];
     t.textContent = text[j];
+    small.style.background = color[j];
     if (j < imagesSmall.length - 1) {
       j++;
     } else {
       j = 0;
     }
-    setTimeout("resizeImg()", time);
   }
+  setTimeout("changeImgText()", time);
 }
-window.addEventListener("load", resizeImg);
-window.addEventListener("resize", resizeImg);
+window.addEventListener("load", changeImgText);
 
 //applying a class to header after scrolling y-axis
 window.addEventListener("scroll", () => {
@@ -55,9 +52,6 @@ window.addEventListener("scroll", () => {
 
   header.classList.toggle("scrolling-active", windowPosition);
 });
-
-//color change .viewport div.head-para-a div
-var color = ['#27cc90', '#fece00', '#fe9ea1'];
 
 
 // header list on hover => appearing block
