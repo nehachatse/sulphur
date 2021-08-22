@@ -95,6 +95,7 @@ headerList[2].addEventListener("mouseout", () => {
 var navBar = document.getElementById("navbar-menu");
 var menu = document.getElementById("menu");
 navBar.addEventListener("click", () => {
+  // menu.classList.toggle("open");
   menu.style.display = "block";
 });
 

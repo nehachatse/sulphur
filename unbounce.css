@@ -1197,8 +1197,14 @@ footer div.footer-bottom div.social-media a:nth-child(3) img {
     width: 100%;
     height: 99vh;
     background-color: white;
-    transition: 2s;
+    /* clip-path: circle(100px at 50% -20%);
+    -webkit-clip-path: circle(100px at 50% -20%);
+    transition: all 1s ease-out; */
   }
+  /* #menu.open {
+    clip-path: circle(1000px at 50% -20%);
+    -webkit-clip-path: circle(1000px at 50% -20%);
+  } */
   #menu > div:nth-child(1) {
     display: flex;
     align-items: center;
