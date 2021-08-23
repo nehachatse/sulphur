@@ -226,7 +226,7 @@
   header > div .list li:nth-child(1) > a::after,
   header > div .list li:nth-child(2) > a::after,
   header > div .list li:nth-child(4) > a::after {
-    content: "╲╱";
+    content: "â•²â•±";
     position: relative;
     font-size: 0.3rem;
     margin-left: 5px;
@@ -271,7 +271,7 @@
   }
   /* Footer style for the Page */
 footer > div {
-    width: 1110px;
+    width: 100%;
     margin: 110px auto;
   }
   footer div.footer-logo img {
@@ -348,16 +348,17 @@ footer > div {
 /* container */
 .container{
     width: 100%;
-    height: 4000px;
+    height: 5000px;
     /* background-color: blueviolet; */
 }
+/* Headline style goes here */
 .headline{
-    height: 11%;
+    height: 9%;
     width: 100%;
     background-color: white;
 }
 .heading{
-    height: 76%;
+    height: 70%;
     width: 75%;
     padding-top: 2%;
     margin: 0% auto;
@@ -371,12 +372,13 @@ footer > div {
 .heading>button{
     height: 22%;
     width: 22%;
-    margin: 4% 0% 0% 35%;
+    margin: 3% 0% 0% 38%;
     background-color: #03f;
     color: #fff;
 }
+/* duration two button style goes here */
 .duration{
-    height: 16%;
+    height: 15%;
     width: 30%;
     margin: auto;
     display: flex;
@@ -395,19 +397,22 @@ button{
     border-top: black solid 3px;
     background-color: #d4d3d3;
 }
+/* Plans card section goes here */
 .plans{
-    height: 30%;
+    height: 24%;
     width: 100%;
-    background-color:#d4d3d3 ;
+    background-color:#d4d3d3;
+    border-bottom: gray solid 1px;
     padding-top: 4%;
 }
 .plans>div{
-    height: 80%;
+    height: 78%;
     width: 70%;
     margin: auto;
     background-color: white;
     display: flex;
 }
+/* card style different plans */
 .card{
     height: 100%;
     width: 22.3%;
@@ -428,17 +433,18 @@ button{
     color: rgba(90, 86, 86, 0.774);
 }
 .card>h1{
-    font-size: 3.5rem;
+    font-size: 2.2rem;
     font-weight: bold;
     margin: 15% 0%;
 }
 h1>span{
     font-size: 2rem;
 }
+/* Inside card there is features , style is here */
 .whatyouget{
+    margin: 10% 0%;
     height: 18%;
     width: 100%;
-    margin: 18% 0%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: repeat(4,25%);
@@ -472,7 +478,7 @@ h1>span{
     border-right: gray solid 2px;
 }
 .plans>.include{
-    height: 20%;
+    height: 22%;
     display: block;
 }
 .include>h2{
@@ -495,6 +501,7 @@ h1>span{
 }
 .include>button{
     width: 15%;
+    min-width: 196px;
     height: 25%;
     font-size: 1.4rem;
     margin-left: 43%;
@@ -503,11 +510,11 @@ h1>span{
 .plans>.visible{
     display: none;
 }
-/* after content */
+/* after card  content style goes here */
+
 .after-content > div:nth-child(1) {
     padding: 10px 0px 30px;
   }
-  /* full width content */
   .full-width-content {
     padding: 10px 7% 50px;
     border-bottom: black solid 2px;
@@ -516,7 +523,7 @@ h1>span{
       display: block;
   }
   .full-width-content > div div {
-    max-width: 48%;
+    max-width: 61%;
     margin: auto;
   }
   .full-width-content > div div h1 {
@@ -536,10 +543,10 @@ h1>span{
     width: 48%;
   }
   
-  /* full width content width blue color */
+  /* full width content width Button down */
   .full-width-content-blue {
       height: 10%;
-      border-bottom: blue solid 2px;
+      border-bottom: black solid 2px;
   }
   .full-width-content-blue > div {
     width: 80%;
@@ -570,7 +577,7 @@ h1>span{
     background-color: white;
   }
   .chat{
-      height: 8%;
+      height: 6%;
       width: 100%;
       border-bottom: black solid 2px;
   }
@@ -587,25 +594,27 @@ h1>span{
   }
   .chat>div>button{
       margin-left: 45%;
-      height: 25%;
-      width: 12%;
+      height: 21%;
+      width: 15%;
+      background-color: blue;
   }
   .line{
       height: 4px;
       width: 30px;
-      margin:4.5% auto;
+      margin:3% auto;
       background-color: burlywood;
   }
   /* earnworthy founder */
 .earnworthy {
+    height: 13%;
     width: 90%;
     display: flex;
-    margin: 5rem auto 0px;
+    margin:auto;
   }
   .earnworthy > img {
     max-width: 48%;
-    height: auto;
-    margin: auto;
+    height: 85%;
+    width: auto;
   }
   .earnworthy div {
     text-align: left;
@@ -615,13 +624,13 @@ h1>span{
     font-size: 34px;
     font-weight: 400;
     line-height: 3.1rem;
-    margin-top: 4rem;
+    margin-top: 2rem;
   }
   .earnworthy div h4::before {
-    content: "“";
+    content: "â€œ";
   }
   .earnworthy div h4::after {
-    content: "”";
+    content: "â€";
   }
   .earnworthy div p {
     color: #303030;
@@ -629,6 +638,191 @@ h1>span{
     margin-top: 2.5rem;
     margin-bottom: 1.5rem;
   }
-  .earnworthy div img {
+  .earnworthy>div>img {
     width: 120px;
+  }
+  /* Plan that fits you style */
+  .plan-fit{
+    height: 18%;
+    width: 100%;
+  }
+  .plan-fit>div:nth-child(1){
+    height: 20%;
+  }
+  .plan-fit>div>h1,.plan-fit>div>p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+  .plan-fit>div>h1{
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  .fitting-plans{
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-basis: 50%;
+  }
+  .fitting-plans>div:nth-child(1){
+    height: 60%;
+    width: 60%;
+    margin-top: 10%;
+  }
+  .fitting-plans>div:nth-child(1)>img{
+    height: 100%;
+    width: 100%;
+  }
+  .side-screen{
+    height: 100%;
+    width: 50%;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  }
+  .side-screen>div:nth-child(1){
+    height: 8%;
+    display: flex;
+  }
+  .side-screen>div:nth-child(2){
+    height: 92%;
+  }
+  .side-screen .card{
+    height: 100%;
+    width: 100%;
+  }
+  .change-flex{
+    display: flex;
+  }
+  .change-flex>img{
+    width: 30%;
+    height: 70%;
+  }
+  .change-flex>div{
+    padding-top: 10%;
+  }
+  .plan-fit .card{
+    border-style: none;
+  }
+  .card>h1{
+    margin: 0% 0%;
+  }
+  .card>p{
+    height: 13%;
+    margin: 2% 0%;
+  }
+  .whatyouget{
+    margin: 10% 0%;
+    height: 19%;
+  }
+  .plan-fit .card>button{
+    margin:0%;
+    height: 12%;
+  }
+
+  .whatyouget h4{
+    padding: 0%;
+  }
+  .whatyouget img{
+    height: 40%;
+    width: 10%;
+  }
+  .hide{
+    display: none;
+  }
+  .plan-fit .card:nth-child(2){
+    border-style: none;
+  }
+  /* last list checking */
+  .last {
+    height: 16.3%;
+    background-color: aqua;
+}
+.laster{
+  height: 400px;
+  background-color: blueviolet;
+  display: none;
+}
+.lassthan800{
+  display: none;
+}
+  @media only screen and (max-width: 1400px) {
+    .plans>div {
+      width: 87%;
+  }
+  }
+  @media only screen and (max-width: 1200px) {
+    .plans>div {
+      width: 95%;
+  }
+  .full-width-content {
+    padding: 10px 0% 50px;
+  }
+  .full-width-content > div div {
+    max-width: 68%;
+  }
+  .fitting-plans {
+    width: 80%;
+  }
+  }
+  @media only screen and (max-width: 992px) {
+    .plans>div {
+      width: 100%;
+  }
+  .full-width-content > div div {
+    max-width: 75%;
+  }
+  .chat>div>button {
+    font-size: 1.5rem;
+  }
+  .full-width-content-blue > div {
+    width: 100%;
+  }
+  .heading>button {
+    font-size: 1.5rem;
+    width: 25%;
+  }
+  .card>h1 {
+    font-size: 1.8rem;
+  }
+  }
+  @media only screen and (max-width: 800px) {
+    .earnworthy {
+      flex-direction: column-reverse;
+    }
+    .earnworthy>div{
+      height: 50%;
+    }
+    .earnworthy div img:nth-child(1) {
+      height: 73%;
+      width: 50%;
+      margin: auto;
+    }
+    .earnworthy div h4 {
+      font-size: 23px;
+    }
+    .lassthan800{
+      display: block;
+    }
+    .greater800{
+      display: none;
+    }.earnworthy div p {
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+    .earnworthy>div:nth-child(1){padding-left: 30%;
+      padding-top: 10px;
+    }
+    .full-width-content-blue>div>img{
+      height: 40%;
+      width: 15%;
+    }
+    .card>p {
+      font-size: 1rem;
+    }
+    .card>h1 {
+      height: 10%;
+  }
   }

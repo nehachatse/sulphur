@@ -19,3 +19,25 @@ window.addEventListener('click', function(e) {
         count=1;
     }
   })
+
+const button=document.querySelectorAll('.side-screen>div>button');
+const hide=document.querySelectorAll('.hide');
+hide[0].classList.remove('hide');
+button[0].classList.add('active_button');
+var sam =1;
+window.addEventListener('click', function(e) {
+    if (sam==1) {
+        button[0].classList.remove('active_button');
+        button[1].classList.add('active_button');
+        hide[0].classList.add('hide');
+        hide[1].classList.remove('hide');
+        sam=0;
+    }
+    else if(sam==0){
+        button[1].classList.remove('active_button');
+        button[0].classList.add('active_button');
+        hide[1].classList.add('hide');
+        hide[0].classList.remove('hide');
+        sam=1;
+    }
+  })
