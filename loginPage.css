@@ -71,7 +71,7 @@ form > div > input {
   border: 1px solid #c9c8c8;
   border-radius: 3px;
 }
-input:focus{
+form input:focus{
     border: 2px solid #03f;
     box-shadow: 0 0 1px #1670BE;
     outline-offset: 0px;
@@ -144,9 +144,6 @@ form footer > a:nth-child(4) img {
   width: 20px;
   margin-right: 8px;
 }
-/* form footer > a:nth-child(4)::before {
-  content: url(https://image.flaticon.com/icons/png/128/281/281764.png);
-} */
 form footer > a:nth-child(4) {
   margin-bottom: 50px;
 }
