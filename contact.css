@@ -8,6 +8,9 @@ header.navbar-fixed > div {
   top: 0px;
   background-color: white;
 }
+img[alt="search icon"] {
+  width: 18px;
+}
 #contact-body {
   width: 90%;
   margin-top: 20vh;
@@ -124,8 +127,12 @@ header.navbar-fixed > div {
   flex-basis: 35%;
   margin: 2%;
 }
-.contact-body img {
+img {
   width: 100%;
+}
+div.div-color {
+  width: 100%;
+  padding-bottom: 300px;
 }
 @media screen and (min-width: 1008px) {
   .cato-details > div:nth-child(1) {

@@ -10,7 +10,7 @@ var imagesSmall = [
   "https://unbounce.com/photos/get-more-customers-slide-1.webp",
 ];
 var text = ["Conversions", "Relevance", "Confidence"];
-//color change .viewport div.head-para-a div
+//color change of (.viewport div.head-para-a div) for small screen
 var color = ["#27cc90", "#fece00", "#fe9ea1"];
 var time = 4000;
 var i = 0;
@@ -95,7 +95,7 @@ headerList[2].addEventListener("mouseout", () => {
 var navBar = document.getElementById("navbar-menu");
 var menu = document.getElementById("menu");
 navBar.addEventListener("click", () => {
-  // menu.classList.toggle("open");
+  // menu.classList.toggle("open");     --clip-path
   menu.style.display = "block";
 });
 
