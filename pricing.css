@@ -408,31 +408,54 @@ h1 > span {
 }
 
 /* frequently asked Questions */
-.frequently-asked-question {
-  width: 85%;
+#frequently-asked-question {
+  width: 82%;
   margin: 0px auto 100px;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  color: #303030;
 }
-.frequently-asked-question > h1 {
+#frequently-asked-question > h1 {
+  font-size: 40px;
   cursor: pointer;
 }
-.frequently-asked-question .frequently-list {
-  /* display: none; */
+#frequently-asked-question > h1::after {
+  content: "╲╱";
+  font-size: 0.5rem;
+  position: absolute;
+  right: 9%;
+}
+#frequently-asked-question > p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+#frequently-asked-question #frequently-list {
+  display: none;
   margin-top: 50px;
   font-size: 20px;
-  color: #303030;
-  list-style-type: none;
 }
-.frequently-asked-question .frequently-list div {
+#frequently-asked-question #frequently-list div {
   margin: 20px 0px;
 }
-.frequently-asked-question .frequently-list div h4 {
+#frequently-asked-question #frequently-list div h4 {
+  font-size: 24px;
+  line-height: 1.8;
   cursor: pointer;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
 }
-.frequently-asked-question .frequently-list div p {
-  /* display: none; */
+#frequently-asked-question #frequently-list div h4::after {
+  content: "╲╱";
+  font-size: 0.5rem;
+  position: absolute;
+  right: 9%;
+}
+#frequently-asked-question #frequently-list div p {
+  display: none;
+  font-size: 18px;
+  color: #303030;
   margin: 15px 0px;
 }
-
 
 @media only screen and (max-width: 1400px) {
   .plans > div {

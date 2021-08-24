@@ -41,47 +41,89 @@ window.addEventListener("click", function (e) {
 });
 
 // frequetly-asked-question
-var asked = document.getElementsByClassName("frequently-asked-question")[0];
-var askedList = document.getElementsByClassName('frequently-list')[0];
-var j = 0;
+var asked = document.getElementById("faq");
+var askedList = document.getElementById("frequently-list");
+var j = 1;
 asked.addEventListener("click", () => {
-    if (count%2===0) {
-        askedList.style.display = 'none';
-    }
-    else {
-        askedList.style.display = 'block';
-    }
-    j++;
+  if (j % 2 === 0) {
+    askedList.style.display = "none";
+  } else {
+    askedList.style.display = "block";
+  }
+  j++;
 });
 
-var faqh = document.getElementsByClassName('faq-h');
-var faqp = document.getElementsByClassName('faq-p');
-var i = 0;
-faqh[0].addEventListener('click', () => {
-    if(i%2===0) {
-        faqp[0].style.display = 'none';
-    }
-    else {
-        faqp[0].style.display = 'block';
-    }
-    i++;
-})
-faqh[1].addEventListener('click', () => {
-    if(i%2===0) {
-        faqp[1].style.display = 'none';
-    }
-    else {
-        faqp[1].style.display = 'block';
-    }
-    i++;
-})
-faqh[2].addEventListener('click', () => {
-    if(i%2===0) {
-        faqp[2].style.display = 'none';
-    }
-    else {
-        faqp[2].style.display = 'block';
-    }
-    i++;
-})
-
+var faqh = document.getElementsByClassName("faq-h");
+var faqp = document.getElementsByClassName("faq-p");
+var index = 1;
+faqh[0].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[0].style.display = "none";
+  } else {
+    faqp[0].style.display = "block";
+  }
+  index++;
+});
+faqh[1].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[1].style.display = "none";
+  } else {
+    faqp[1].style.display = "block";
+  }
+  index++;
+});
+faqh[2].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[2].style.display = "none";
+  } else {
+    faqp[2].style.display = "block";
+  }
+  index++;
+});
+faqh[3].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[3].style.display = "none";
+  } else {
+    faqp[3].style.display = "block";
+  }
+  index++;
+});
+faqh[4].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[4].style.display = "none";
+  } else {
+    faqp[4].style.display = "block";
+  }
+  index++;
+});
+faqh[5].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[5].style.display = "none";
+  } else {
+    faqp[5].style.display = "block";
+  }
+  index++;
+});
+faqh[6].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[6].style.display = "none";
+  } else {
+    faqp[6].style.display = "block";
+  }
+  index++;
+});
+faqh[7].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[7].style.display = "none";
+  } else {
+    faqp[7].style.display = "block";
+  }
+  index++;
+});faqh[8].addEventListener("click", () => {
+  if (index % 2 === 0) {
+    faqp[8].style.display = "none";
+  } else {
+    faqp[8].style.display = "block";
+  }
+  index++;
+});
