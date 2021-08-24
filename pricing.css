@@ -408,12 +408,29 @@ h1 > span {
 }
 
 /* frequently asked Questions */
-.frequently-asked-questions {
-  width: 100%;
-  background-color: orange;
+.frequently-asked-question {
+  width: 85%;
+  margin: 0px auto 100px;
 }
-.frequently-asked-questions .frequently-list {
-  display: none;
+.frequently-asked-question > h1 {
+  cursor: pointer;
+}
+.frequently-asked-question .frequently-list {
+  /* display: none; */
+  margin-top: 50px;
+  font-size: 20px;
+  color: #303030;
+  list-style-type: none;
+}
+.frequently-asked-question .frequently-list div {
+  margin: 20px 0px;
+}
+.frequently-asked-question .frequently-list div h4 {
+  cursor: pointer;
+}
+.frequently-asked-question .frequently-list div p {
+  /* display: none; */
+  margin: 15px 0px;
 }
 
 
