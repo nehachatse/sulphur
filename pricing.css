@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+span{
+  cursor: pointer;
+}
+
+/* container */
+.container{
+    width: 100%;
+    height: 4500px;
+    /* background-color: blueviolet; */
+}
+/* Headline style goes here */
+.headline{
+    height: 9%;
+    width: 100%;
+    background-color: white;
+}
+.heading{
+    height: 85%;
+    width: 75%;
+    padding-top: 2%;
+    margin: 0% auto;
+    max-height: none;
+}
+.heading>p{
+    font-size: 1.3rem;
+    max-width: 1000px;
+    margin: auto;
+}
+.heading>button{
+    height: 22%;
+    width: 22%;
+    margin: 3% 0% 0% 38%;
+    background-color: #03f;
+    color: #fff;
+}
+/* duration two button style goes here */
+.duration{
+    height: 15%;
+    width: 30%;
+    margin: auto;
+    display: flex;
+}
+button{
+    height: 90%;
+    margin-top: 1%;
+    width: 50%;
+    border: gray solid 1px;
+    font-size: 1.9rem;
+    background-color: white;
+    cursor: pointer;
+}
+.active_button{
+    height: 100%;
+    margin-top: 0%;
+    border-top: black solid 3px;
+    background-color: #d4d3d3;
+}
+/* Plans card section goes here */
+.plans{
+    height: 30%;
+    width: 100%;
+    background-color:#d4d3d3;
+    border-bottom: gray solid 1px;
+    padding-top: 4%;
+}
+.plans>div{
+    height: 78%;
+    width: 70%;
+    margin: auto;
+    background-color: white;
+    display: flex;
+}
+/* card style different plans */
+.card{
+    height: 100%;
+    width: 25%;
+    border-bottom: gray solid 2px;
+    padding-left: 2.5%;
+}
+.card>img{
+    height: 13%;
+    width: 50%;
+    margin: -50px 0% 6%;
+}
+.card>h2{
+    font-size: 2rem;
+}
+.card>p{
+    font-size: 1.2rem;
+    margin: 6% 0%;
+    color: rgba(90, 86, 86, 0.774);
+}
+.card>h1{
+    font-size: 2.2rem;
+    font-weight: bold;
+    margin: 15% 0%;
+}
+h1>span{
+    font-size: 2rem;
+}
+/* Inside card there is features , style is here */
+.whatyouget{
+    margin: 10% 0%;
+    height: 18%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: repeat(4,25%);
+}
+.whatyouget>div{
+    display: flex;
+    flex-basis: 15%;
+}
+.whatyouget>div span{
+    font-size: 20px;
+    background-color: gray;
+}
+.grow{
+    word-spacing: 2px;
+    padding-top: 3%;
+    flex-grow: 1;
+}
+.card>button{
+    height: 8%;
+    width: 80%;
+    font-size: 1.2rem;
+    margin: 18% 0% 10%;
+    background-color: #03f;
+    color: #fff;
+}
+.card>button:hover{
+  background-color: white;
+  border: #03f solid 2px;
+  color: black;
+  transition-duration: 1s;
+  animation-direction: alternate-reverse;
+}
+.card:nth-child(2){
+    height: 99.7%;
+    border: black solid 3px;
+}
+.card:nth-child(3){
+    border-right: gray solid 2px;
+}
+.plans>.include{
+    height: 22%;
+    display: block;
+}
+.include>h2{
+    padding-top: 2%;
+    text-align: center;
+}
+.flex{
+    height: 30%;
+    width: 80%;
+    margin:1% auto 0%;
+    display: flex;
+}
+.flex>div{
+    width: 25%;
+    display: flex;
+}
+.flex>div>img{
+    height: 50%;
+    width: 20%;
+}
+.include>button{
+    width: 15%;
+    min-width: 196px;
+    height: 25%;
+    font-size: 1.4rem;
+    margin-left: 43%;
+    border: #03f solid 2px;
+}
+.include>button:hover{
+  background-color:#03f;
+  transition-duration: 1s;
+  border: rgb(0, 204, 255) solid 2px;
+  color: white;
+}
+.plans>.visible{
+    display: none;
+}
+/* after card  content style goes here */
+
+.after-content > div:nth-child(1) {
+    padding: 10px 0px 30px;
+  }
+  .full-width-content {
+    padding: 10px 7% 50px;
+    border-bottom: black solid 2px;
+  }
+  .full-width-content > div {
+      display: block;
+  }
+  .full-width-content > div div {
+    max-width: 61%;
+    margin: auto;
+  }
+  .full-width-content > div div h1 {
+    font-size: 70px;
+    text-align: center;
+    font-weight: 300;
+  }
+  .full-width-content > div div p {
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 2rem 0px;
+  }
+  .full-width-content img {
+    width: 48%;
+  }
+  
+  /* full width content width Button down */
+  .full-width-content-blue {
+      height: 10%;
+      border-bottom: black solid 2px;
+  }
+  .full-width-content-blue > div {
+    width: 80%;
+    margin:0px auto 20px;
+    display: flex;
+  }
+  .full-width-content-blue > div p {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.5;
+    margin-top: 1.5rem;
+    margin-bottom: 5rem;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .full-width-content-blue > div:nth-child(1) a:hover {
+    background-color: #03f;
+    color: white;
+    transition-duration: 1s;
+}
+  .full-width-content-blue > div a {
+      margin-top: 20px;
+      height: 18%;
+      width: 40%;
+    text-decoration: none;
+    padding: 20px 0px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border: 2px solid rgb(16, 31, 238);
+  }
+  .full-width-content-blue > div:nth-child(1) a {
+    background-color: white;
+  }
+  /* lets chat  */
+  .chat{
+      height: 8%;
+      width: 100%;
+      border-bottom: black solid 2px;
+  }
+  .chat>div{
+      width: 80%;
+      height: 100%;
+      margin: auto;
+  }
+  .chat>div>h1{
+      font-size: 3rem;
+      font-weight: 300;
+      text-align: center;
+      margin-bottom: 3%;
+  }
+  .chat>div>button{
+      margin-left: 45%;
+      height: 21%;
+      width: 15%;
+      background-color: blue;
+      color: white;
+  }
+  .chat>div>button:hover{
+    background-color: white;
+    border: #03f solid 2px;
+    color: black;
+    transition-duration: 2s;
+}
+  .line{
+      height: 9px;
+      width: 55px;
+      margin:3% auto;
+      background-color: burlywood;
+  }
+  /* earnworthy founder */
+.earnworthy {
+    height: 14%;
+    width: 90%;
+    display: flex;
+    margin:auto;
+  }
+  .earnworthy > img {
+    max-width: 48%;
+    height: 85%;
+    width: auto;
+  }
+  .earnworthy div {
+    text-align: left;
+    margin-left: 5%;
+  }
+  .earnworthy div h4 {
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 3.1rem;
+    margin-top: 2rem;
+  }
+  .earnworthy div h4::before {
+    content: "â€œ";
+  }
+  .earnworthy div h4::after {
+    content: "â€";
+  }
+  .earnworthy div p {
+    color: #303030;
+    font-size: 20px;
+    margin-top: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .earnworthy>div>img {
+    width: 120px;
+  }
+  /* Plan that fits you style */
+  .plan-fit{
+    height: 24%;
+    width: 100%;
+  }
+  .plan-fit>div:nth-child(1){
+    height: 20%;
+  }
+  .plan-fit>div>h1,.plan-fit>div>p{
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2%;
+  }
+  .plan-fit>div>h1{
+    font-size: 5rem;
+    font-weight: 400;
+  }
+  .fitting-plans{
+    height: 80%;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    flex-basis: 50%;
+  }
+  .fitting-plans>div:nth-child(1){
+    height: 60%;
+    width: 60%;
+    margin-top: 10%;
+  }
+  .fitting-plans>div:nth-child(1)>img{
+    height: 100%;
+    width: 100%;
+  }
+  .side-screen{
+    height: 100%;
+    width: 50%;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+  }
+  .side-screen>div:nth-child(1){
+    height: 8%;
+    display: flex;
+  }
+  .side-screen>div:nth-child(2){
+    height: 92%;
+  }
+  .side-screen .card{
+    height: 100%;
+    width: 100%;
+  }
+  .change-flex{
+    display: flex;
+  }
+  .change-flex>img{
+    width: 30%;
+    height: 70%;
+  }
+  .change-flex>div{
+    padding-top: 10%;
+  }
+  .plan-fit .card{
+    border-style: none;
+  }
+  .card>h1{
+    margin: 0% 0%;
+  }
+  .card>p{
+    height: 13%;
+    margin: 2% 0%;
+  }
+  .whatyouget{
+    margin: 10% 0%;
+    height: 19%;
+  }
+  .plan-fit .card>button{
+    height: 10%;
+    width: 67%;
+    margin-left: 5%;
+  }
+
+  .whatyouget h4{
+    padding: 0%;
+  }
+  .whatyouget img{
+    height: 40%;
+    width: 10%;
+  }
+  .hide{
+    display: none;
+  }
+  .plan-fit .card:nth-child(2){
+    border-style: none;
+  }
+  /* last list checking */
+  /* .last {
+    height: 16.3%;
+    background-color: aqua;
+} */
+.lassthan800{
+  display: none;
+}
+/* frequently asked question */
+#frequently-asked-question {
+  align-self: flex-end;
+  height: auto;
+  width: 82%;
+  margin: 40px auto;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  color: #303030;
+  cursor: pointer;
+}
+#frequently-asked-question > h1 {
+  font-size: 40px;
+  cursor: pointer;
+}
+#frequently-asked-question > h1::after {
+  content: "╲╱";
+  font-size: 0.5rem;
+  position: absolute;
+  right: 9%;
+}
+#frequently-asked-question > p {
+  font-size: 18px;
+  margin-top: 10px;
+}
+#frequently-asked-question #frequently-list {
+  display: none;
+  margin-top: 50px;
+  font-size: 20px;
+}
+#frequently-asked-question #frequently-list div {
+  margin: 20px 0px;
+}
+#frequently-asked-question #frequently-list div h4 {
+  font-size: 24px;
+  line-height: 1.8;
+  cursor: pointer;
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+}
+#frequently-asked-question #frequently-list div h4::after {
+  content: "╲╱";
+  font-size: 0.5rem;
+  position: absolute;
+  right: 9%;
+}
+#frequently-asked-question #frequently-list div p {
+  display: none;
+  font-size: 18px;
+  color: #303030;
+  margin: 15px 0px;
+}
+  @media only screen and (max-width: 1400px) {
+    .plans>div {
+      width: 87%;
+  }
+  #frequently-asked-question {
+    margin: 100px auto 0px;
+}
+  }
+  @media only screen and (max-width: 1200px) {
+    .plans>div {
+      width: 95%;
+  }
+  .full-width-content {
+    padding: 10px 0% 50px;
+  }
+  .full-width-content > div div {
+    max-width: 68%;
+  }
+  .fitting-plans {
+    width: 80%;
+  }
+  }
+  @media only screen and (max-width: 992px) {
+    .container{
+      height: 4800px;
+    }
+    .plans>div {
+      width: 100%;
+  }
+  .full-width-content > div div {
+    max-width: 75%;
+  }
+  .chat>div>button {
+    font-size: 1.5rem;
+  }
+  .full-width-content-blue > div {
+    width: 100%;
+  }
+  .heading>button {
+    font-size: 1.5rem;
+    width: 25%;
+  }
+  .card>h1 {
+    font-size: 1.8rem;
+  }
+  }
+  @media only screen and (max-width: 800px) {
+    .earnworthy {
+      flex-direction: column-reverse;
+    }
+    .earnworthy>div{
+      height: 50%;
+    }
+    .earnworthy div img:nth-child(1) {
+      height: 73%;
+      width: 50%;
+      margin: auto;
+    }
+    .earnworthy div h4 {
+      font-size: 23px;
+    }
+    .lassthan800{
+      display: block;
+    }
+    .greater800{
+      display: none;
+    }.earnworthy div p {
+      margin-top: 0rem;
+      margin-bottom: 0rem;
+    }
+    .earnworthy>div:nth-child(1){padding-left: 30%;
+      padding-top: 10px;
+    }
+    .full-width-content-blue>div>img{
+      height: 40%;
+      width: 15%;
+    }
+    .card>p {
+      font-size: 1rem;
+    }
+    .card>h1 {
+      height: 10%;
+  }
+  }
