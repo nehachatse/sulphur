@@ -1,0 +1,732 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,200;0,300;0,400;1,300&display=swap');
+*{
+    margin: 0px;
+    padding: 0%;
+}
+body{
+    background-color: white;
+}
+/* Apply styles after scroll */
+.scrolling-active > div {
+    padding: auto;
+    background-color: white;
+    box-shadow: 0 3px 1rem rgba(0, 0, 0, 0.2);
+  }
+  .scrolling-active .navbar-top-right a[name="log in"] {
+    color: blue;
+    background: none;
+  }
+  .scrolling-active .navbar-top-right a[name="free trial"] {
+    color: white;
+    background-color: blue;
+  }
+  .scrolling-active .navbar-top-right a[name="free trial"],
+  .scrolling-active .navbar-top-right a[name="log in"] {
+    border: 2px solid blue;
+  }
+  
+  /* slides before header */
+  div.header-section img[name="slide"] {
+    position: absolute;
+    width: 100%;
+    z-index: -1;
+  }
+  
+  /* header with class navbar-fixed */
+  header.navbar-fixed > div {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    padding: 20px 8.5% 13px;
+  }
+  header > div > a {
+    min-width: 150px;
+    margin-right: 5%;
+    font-family: "Source Sans Pro", sans-serif;
+    font-weight: 400;
+  }
+  header > div .list {
+    width: 40%;
+    display: flex;
+    font-size: 16px;
+    margin-top: 25px;
+    margin-right: 15%;
+    list-style-type: none;
+  }
+  
+  /* menu appearing when hovered on header link list */
+  .products {
+    padding-top: 12px;
+  }
+  .products .products-hover {
+    position: absolute;
+    display: flex;
+    width: 650px;
+    height: 420px;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(207, 206, 206);
+  }
+  .products .products-hover div.p-line {
+    width: 10px;
+    height: 100px;
+    background-color: #03f;
+  }
+  .products .products-hover div.hr {
+    width: 2px;
+    height: 100%;
+    background-color: #cdc8c8;
+  }
+  .products .products-hover div:nth-child(2) {
+    width: 700px;
+  }
+  .products .products-hover div:nth-child(2),
+  .products .products-hover div:nth-child(4) {
+    padding: 25px 20px;
+  }
+  .products .products-hover div h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(44, 41, 41);
+  }
+  .products .products-hover div:nth-child(2) h5::after {
+    content: "New";
+    font-size: 10px;
+    margin-left: 5px;
+    padding: 3px 5px;
+    background-color: rgb(76, 221, 76);
+  }
+  .products .products-hover div:nth-child(2) p {
+    width: 270px;
+  }
+  .products .products-hover div p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 40px;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  .products .products-hover div div a {
+    display: flex;
+    margin: 30px 0px;
+    color: #303030;
+  }
+  .products .products-hover div div a img {
+    margin-right: 10px;
+  }
+  .products .products-hover {
+    display: none;
+  }
+  /* solution hover */
+  .solution {
+    padding-top: 12px;
+  }
+  .solution .products-hover {
+    width: 450px;
+    height: 300px;
+    position: absolute;
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(207, 206, 206);
+  }
+  .solution .products-hover div:nth-child(1) {
+    width: 240px;
+  }
+  .solution .products-hover div:nth-child(1),
+  .solution .products-hover div:nth-child(3) {
+    padding: 25px 20px;
+  }
+  .solution .products-hover div h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(44, 41, 41);
+  }
+  .solution .products-hover div.hr {
+    width: 1px;
+    height: 100%;
+    background-color: #cdc8c8;
+  }
+  .solution .products-hover div div a {
+    display: flex;
+    margin: 30px 0px;
+    color: #303030;
+  }
+  .solution .products-hover {
+    display: none;
+  }
+  /* learn hover */
+  .learn {
+    padding-top: 30px;
+  }
+  .learn .products-hover {
+    width: 670px;
+    height: 420px;
+    position: absolute;
+    display: flex;
+    background-color: white;
+    box-shadow: 1px 1px 1px rgb(207, 206, 206);
+  }
+  .learn .products-hover div:nth-child(1),
+  .learn .products-hover div:nth-child(3) {
+    padding: 25px 20px;
+  }
+  .learn .products-hover div:nth-child(1) {
+    width: 320px;
+    padding-left: 15px;
+    padding-top: 0px;
+  }
+  .learn .products-hover div:nth-child(1) a {
+    font-size: 18px;
+  }
+  .learn .products-hover div:nth-child(3) {
+    text-align: left;
+    width: 300px;
+  }
+  .learn .products-hover div:nth-child(3) div {
+    padding: 0px;
+  }
+  .learn .products-hover div:nth-child(3) div a {
+    font-size: 12px;
+    text-decoration: underline;
+    margin: 45px 0px 15px;
+  }
+  .learn .products-hover div:nth-child(3) div img {
+    width: 300px;
+    margin-left: 0px;
+  }
+  .learn .products-hover div h5 {
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: rgb(44, 41, 41);
+  }
+  .learn .products-hover div.hr {
+    width: 1px;
+    height: 100%;
+    background-color: #cdc8c8;
+  }
+  .learn .products-hover div div a {
+    display: flex;
+    margin: 30px 0px;
+    color: #303030;
+  }
+  .learn .products-hover {
+    display: none;
+  }
+  
+  /* li items inside list of header */
+  header > div .list li {
+    margin-right: 40px;
+  }
+  
+  /* header nav links - after pseudo class */
+  header > div .list li:nth-child(1) > a::after,
+  header > div .list li:nth-child(2) > a::after,
+  header > div .list li:nth-child(4) > a::after {
+    content: "╲╱";
+    position: relative;
+    font-size: 0.3rem;
+    margin-left: 5px;
+  }
+  
+  /* anchor tag inside list item */
+  header > div a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  /* search icon, and log in buttons inside header */
+  header > div .navbar-top-right {
+    min-width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header > div .navbar-top-right img {
+    margin: 0px 3px;
+    background-color: transparent;
+  }
+  header > div .navbar-top-right button[value="log in"] {
+    background-color: transparent;
+  }
+  header > div .navbar-top-right a[name="free trial"] {
+    color: white;
+    background-color: black;
+  }
+  header > div .navbar-top-right a[name="free trial"],
+  header > div .navbar-top-right a[name="log in"] {
+    margin-left: 10px;
+    border: 2px solid black;
+    padding: 8px 11px;
+  }
+  /* header sidebar display none */
+  .header-sidebar {
+    display: none;
+  }
+  #menu {
+    display: none;
+  }
+  /* Footer style for the Page */
+footer > div {
+    width: 1110px;
+    margin: 110px auto;
+  }
+  footer div.footer-logo img {
+    width: 180px;
+    margin-bottom: 1rem;
+  }
+  footer div.footer-links {
+    display: flex;
+  }
+  footer div.footer-links div {
+    margin: 0px auto 0px 0px;
+    text-align: left;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 4;
+  }
+  footer div.footer-links div h3 {
+    font-size: 24px;
+  }
+  footer div.footer-links div ul li {
+    list-style-type: none;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  footer div.footer-links div ul li a {
+    text-decoration: none;
+    color: #303030;
+    font-size: 0.9rem;
+    font-weight: 400;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  footer div.footer-bottom {
+    display: flex;
+    align-items: center;
+    margin: 100px auto 0px;
+  }
+  footer div.footer-bottom div:nth-child(1) {
+    color: #303030;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: auto;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  footer div.footer-bottom div:nth-child(2) {
+    margin-left: 30%;
+  }
+  footer div.footer-bottom div:nth-child(3) {
+    margin-left: 0.5%;
+  }
+  footer div.footer-bottom div.copyright {
+    margin-left: 0px;
+  }
+  footer div.footer-bottom div.terms-privacy {
+    display: flex;
+    width: 25%;
+  }
+  footer div.footer-bottom div.terms-privacy a {
+    text-decoration: none;
+    color: #303030;
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin: auto;
+    font-family: "Source Sans Pro", sans-serif;
+  }
+  footer div.footer-bottom div.social-media {
+    margin-right: 0px;
+  }
+  footer div.footer-bottom div.social-media a img {
+    width: 30px;
+    margin: 0px 2px;
+  }
+  footer div.footer-bottom div.social-media a:nth-child(3) img {
+    border-radius: 50%;
+  }
+.header,.footer{
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    transition: .5s ease;
+    background-color: white;
+    text-align-last: center;
+}
+.active{
+    background-color: white;
+    filter:drop-shadow(14px 14px 8px rgba(192, 189, 189, 0.301));
+}
+.footer{
+    position: relative;
+    height: 200px;
+    background: tomato;
+}
+.container{
+    padding-top: 110px;
+    height: 3400px;
+    min-width: 1000px;
+    width: 65%;
+    margin:auto;
+}
+/* Starting with main content */
+/* giving the heading part its height and width */
+.heading{
+    height: 9%;
+    max-height: 238px;
+    width: 65%;
+    min-width: 1055px;
+    padding-top: 6%;
+    margin: 0% auto 6%;
+}
+.heading>h1,.heading>p{
+    text-align: center;
+    font-size: 18px;
+    color: rgba(41, 40, 40, 0.952);
+    word-spacing: 1px;
+}
+.heading>h1{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 450%;
+    font-weight: 400;
+    margin-bottom: 2.5%;
+    word-spacing: 7px;
+}
+/* bloging post area style */
+.blog_area{
+    height: 85%;
+    width: 100%;
+    display: flex;
+}
+.blog_area img{
+    cursor: pointer;
+}
+.post_area{
+    height: 100%;
+    width: 69%;
+}
+.ad_area{
+    height: 45%;
+    width: 26%;
+    margin-left: 5%;
+}
+/* big post style goes here */
+.big_post{
+    height: 23%;
+    width: 100%;
+    margin-bottom: 6%;
+    border: gray solid 1px;
+}
+.big_post>h6,.big_post>h2,.big_post>p{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    font-size: 13px;
+    margin:3%;
+    line-height: 130%;
+    word-spacing: 3px;
+}
+.big_post>h6>span{
+    color:mediumblue;
+}
+.big_post>h2{
+    font-size: 2.3em;
+    max-width: 666px;
+    font-weight: 400;
+    inline-size: max-content;
+    cursor: pointer;
+}
+.big_post>p{
+    font-size: 18px;
+    opacity: .6;
+}
+.big_post>img{
+    width: 100%;
+    height: 54%;
+}
+/* small post grid style goes here */
+.grid{
+    height: 75%;
+    width: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(2,49%);
+    grid-template-rows: repeat(5,19.25%);
+}
+.grid>div{
+    border: rgba(145, 142, 142, 0.671) solid 1px;
+}
+.grid>div>img{
+    height: 50%;
+    width: 100%;
+}
+.grid>div>h6,.grid>div>h2{
+    font-size: 13px;
+    margin:3%;
+    line-height: 130%;
+    word-spacing: 3px;
+}
+.grid>div>h6>span{
+    color:mediumblue;
+    cursor: pointer;
+}
+.grid>div>h2{
+    font-size: 27px;
+    font-weight: 200;
+    cursor: pointer;
+}
+/* blog post's side area(ad & form) style starts here  */
+.form{
+    height: 36%;
+    width: 100%;
+    margin-bottom: 5%;
+}
+.form>h3{
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    height: 33%;
+    width: 100%;
+    margin-bottom: 3%;
+    font-size: 35px;
+    font-weight: 400;
+}
+form{
+    width: 100%;
+    height: 65%;
+}
+form>input{
+    height: 13%;
+    width: 90%;
+    margin-bottom: 2.5%;
+}
+form>label{
+font-size: 10px;
+}
+form>input[type="checkbox"]{
+    height: auto;
+    width: auto;
+    margin: 0px;
+}
+form>input[type="button"]{
+    height: 17%;
+    border: none;
+    background-color: rgb(3, 89, 248);
+    font-size: 20px;
+    color: white;
+    cursor: pointer;
+}
+/* two picture ad style  */
+.ad{
+    width: 90%;
+    height: 24%;
+    margin-bottom: 9%;
+}
+.ad_area img{
+    height: 100%;
+    width: 100%;
+}
+#follow{
+    width: 85%;
+    height: 10%;
+    margin-bottom: 0px;
+}
+#follow>div{
+    width: 100%;
+    height: 100%;
+    border: gray solid 1px;
+}
+#follow>div>h1{
+    height: 40%;
+    text-align: center;
+    font-weight: 500;
+}
+/* social link style goes here */
+.social_link{
+    width: 100%;
+    height: 50%;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(4,24%);
+    grid-template-rows: repeat(1,100%);
+    grid-gap: 3px;
+}
+/* .social_link>div{
+    background-color: blue;
+} */
+.social_link img{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%
+}
+/* pages style */
+.pages{
+    height: 3%;
+    width: 100%;
+}
+.pages>div{
+    padding: 5px;
+    height: 50%;
+    width: 50%;
+    margin-left: 70%;
+    display: grid;
+    grid-template-columns: repeat(6,8%);
+    grid-template-rows: repeat(1,100%);
+    grid-gap: 2px;
+}
+.pages>div>div{
+    border: rgba(150, 146, 146, 0.87) solid 1px;
+    padding-top: 40%;
+    text-align: center;
+
+}
+.pages>div>div:nth-child(4){
+    border: none;
+    padding-top: 90%;
+}
+.pages>div>div:nth-child(6){
+    width: 160%;
+}
+/* adding hover effect */
+.post_area img:hover{
+    opacity: 0.5;
+}
+@media only screen and (max-width: 1200px) {
+    .container{
+        min-width: 900px;
+        width: 90%;
+        margin:auto;
+    }
+    .heading {
+        width: 60%;
+        min-width: 950px;
+        padding-top: 5%;
+        margin:0% auto 2%;
+    }
+    .heading>h1 {
+        font-size: 400%;
+    }
+    .big_post>h2 {
+        font-size: 2rem;
+        max-width: 600px;
+    }
+    .form>h3{
+        font-size: 2rem;
+    }
+    #follow>div>h1 {
+        font-size: 1.8rem;
+    }
+    .ad_area {
+        width: 30%;
+        margin-left: 1%;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .container{
+        min-width: 680px;
+        width: 95%;
+        margin:auto;
+    }
+    .heading {
+        min-width: 650px;
+        padding-top: 4%;
+        margin: 0% auto 1%;
+    }
+    .heading>h1 {
+        font-size: 240%;
+    }
+    .big_post>h2 {
+        font-size: 2rem;
+        max-width: 500px;
+    }
+    .form>h3{
+        font-size: 1.9rem;
+    }
+    #follow>div>h1 {
+        font-size: 1.8rem;
+    }
+    .ad_area {
+        width: 30%;
+        margin-left: 1%;
+    }
+    .grid{
+        grid-gap: 15px;
+    }
+    .grid>div>h2{
+        font-size: 23px;
+        font-weight: 400;
+    }
+    .pages>div{
+        margin-left: 50%;
+        width: 70%;
+    }
+    .pages>div>div{
+        width: 110%;
+    }
+} 
+@media only screen and (max-width: 800px) {
+    .container{
+        min-width: 490px;
+        width: 98%;
+        margin:auto;
+    }
+    .heading {
+        min-width: 500px;
+        padding-top: 4%;
+        margin: 0% auto 1%;
+    }
+    .heading>h1{
+        font-size: 250%;
+    }
+    .lessthan800px{
+        display: none;
+    }
+    .blog_area{
+        display: flex;
+        flex-direction: column;
+    }
+    .post_area{
+        height: 90%;
+        width: 85%;
+        margin: auto;
+    }
+    .ad_area{
+        height: 10%;
+        width:85%;
+        margin:auto;
+    }
+    .big_post>h2 {
+        font-size: 1.4rem;
+        max-width: 500px;
+        inline-size:100%;
+    }
+    .big_post>p{
+        font-size: 1rem;
+        opacity: .6;
+    }
+    .grid{
+        height: 71%;
+        grid-gap: 15px;
+    }
+    .grid>div>h2{
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    .form{
+        height: 100%;
+        width: 40%;
+        margin:auto;
+    }
+    .form>h3{
+        height: 29%;
+        width: 100%;
+        margin-bottom: 1%;
+        font-size: 1.25rem;
+        font-weight: 400;
+    }
+    form{
+        width: 100%;
+        height: 70%;
+    }
+    .pages>div>div{
+        width: 110%;
+    }
+}
