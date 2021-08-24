@@ -113,9 +113,9 @@ body{
     color:mediumblue;
     cursor: pointer;
 }
-.grid>div>h2{
+.grid>div>h2 {
     font-size: 27px;
-    font-weight: 200;
+    font-weight: 400;
     cursor: pointer;
 }
 /* blog post's side area(ad & form) style starts here  */
