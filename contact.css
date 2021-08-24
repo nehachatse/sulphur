@@ -155,20 +155,24 @@ div.div-color {
   width: 100%;
   padding-bottom: 300px;
 }
-div.div-color div.div-2 > div.start-trial{
+div.div-color div.div-2 > div.start-trial > a{
   width: 25rem;
-  margin: 50px auto;
   padding: 20px 50px;
   text-align: center;
   font-size: 25px;
   background-color: white;
+  text-decoration: none;
   color: blue;
   cursor: pointer;
 }
-div.div-color div.div-2 > div.start-trial > a{
-  text-decoration: none;
-  color: blue;
-
+div.div-color div.div-2 > div.start-trial{
+  width: 25rem;
+  margin: 50px auto;
+}
+div.div-color div.div-2 > div.start-trial > a:hover{
+  background-color: blue;
+  border: 3px solid white;
+  color: white;
 }
 @media screen and (min-width: 1200px) {
   .cato-details > div:nth-child(1) {
