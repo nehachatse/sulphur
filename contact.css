@@ -8,6 +8,7 @@
 header.navbar-fixed > div {
   position: fixed;
   top: 0px;
+  padding: 0px;
   background-color: white;
 }
 img[alt="search icon"] {
@@ -83,6 +84,11 @@ div.div-color div.div-2 .btn-a{
 #contact-catogary > div h1 {
   color: rgb(48, 48, 48);
 }
+.btn-a {
+  width: 20rem;
+  height: 50px;
+  margin-top: 50px;
+} 
 
 .btn {
   width: 100%;
@@ -101,6 +107,8 @@ div.div-color div.div-2 .btn-a{
   background-color: blue;
   color: white;
 }
+
+
 
 /*Second "contact-body-digs" div style*/
 #contact-body-digs, #contact-body-digs1 {
@@ -131,6 +139,7 @@ div.div-color div.div-2 .btn-a{
 .contact-addr {
   display: flex;
   flex-wrap: wrap;
+  
 }
 .contact-addr > div {
   flex-basis: 35%;
@@ -145,6 +154,21 @@ img {
 div.div-color {
   width: 100%;
   padding-bottom: 300px;
+}
+div.div-color div.div-2 > div.start-trial{
+  width: 25rem;
+  margin: 50px auto;
+  padding: 20px 50px;
+  text-align: center;
+  font-size: 25px;
+  background-color: white;
+  color: blue;
+  cursor: pointer;
+}
+div.div-color div.div-2 > div.start-trial > a{
+  text-decoration: none;
+  color: blue;
+
 }
 @media screen and (min-width: 1200px) {
   .cato-details > div:nth-child(1) {
@@ -174,6 +198,10 @@ div.div-color {
 }
 
 @media screen and (max-width: 820px) {
+  #contact-body {
+    width: 100%;
+    margin-top: 30vh;
+  }
   #contact-catogary > div {
     flex-basis: 100%;
     height: 350px;
@@ -219,11 +247,11 @@ div.div-color {
 .sol-main-div-1 > div, .div-2 > div {
   flex-basis: 50%;
 }
-.btn-a {
+/* .btn-a {
   width: 100%;
   height: 50px;
   margin-top: 50px;
-}
+} */
 .btn-a > a {
   width: 100%;
   height: 100%;
@@ -351,7 +379,7 @@ div.div-color {
         margin-bottom: 0;
     }
     .div-color{
-        height: 400px;
+        height: 450px;
     } 
 
 }
@@ -370,7 +398,7 @@ div.div-color {
     }
  
     .div-color{
-        height: 350px;
+        height: 400px;
     } 
 }
 
