@@ -14,6 +14,10 @@ header.navbar-fixed > div {
 img[alt="search icon"] {
   width: 18px;
 }
+header>div>a img{
+  width: 64%;
+  margin-left: 51%;
+}
 #contact-body {
   width: 100%;
   margin-top: 20vh;
