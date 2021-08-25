@@ -42,11 +42,13 @@ Our team consist of three members.
 <hr>
 
 5. The Blog Page
-
+<br>
+<img src="https://user-images.githubusercontent.com/63180404/130655819-f4c78f20-fc87-4218-b950-59ff0a1af7fa.png" />
 <hr>
 
 6. The Pricing Page
-
+<br>
+<img src="https://user-images.githubusercontent.com/63180404/130655759-029c02cc-bbc8-4484-a6e2-45a648d6d866.png" />
 <hr>
 
 Thanks for taking a look to our project😊.
