@@ -1,3 +1,5 @@
+## ***this should be run in any live server like visual studio code live server extension*
+
 # sulphur
 
 This is the first project our team got to make at masai - which is the <a href="https://unbounce.com/">Unbounce</a> website clone.
@@ -16,6 +18,7 @@ Our team consist of three members.
   <li>HTML</li>
   <li>CSS</li>
   <li>Javascript</li>
+  <li>jquery</li>
 </ul>
 <hr>
 
