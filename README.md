@@ -1,4 +1,4 @@
-## ***this should be run in any live server like visual studio code live server extension*
+## ***this should be run in any live server like visual studio code live server extension it has jquery*
 
 # sulphur
 
