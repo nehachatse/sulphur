@@ -5,7 +5,8 @@
   font-family: "Source Sans Pro", sans-serif;
   box-sizing: border-box;
 }
-label, input {
+label,
+input {
   display: block;
 }
 a {
@@ -23,7 +24,7 @@ a {
 }
 #invalid p {
   font-size: 24px;
-  color: #E26969;
+  color: #e26969;
   margin-left: 8px;
 }
 .login-page {
@@ -56,7 +57,7 @@ div.create-account > p {
 }
 div.create-account > a {
   font-weight: bold;
-  color: #0033ff; 
+  color: #0033ff;
 }
 form > div > label {
   font-size: 15px;
@@ -71,11 +72,11 @@ form > div > input {
   border: 1px solid #c9c8c8;
   border-radius: 3px;
 }
-form input:focus{
-    border: 2px solid #03f;
-    box-shadow: 0 0 1px #1670BE;
-    outline-offset: 0px;
-    outline: none;
+form input:focus {
+  border: 2px solid #03f;
+  box-shadow: 0 0 1px #1670be;
+  outline-offset: 0px;
+  outline: none;
 }
 form > div {
   margin-bottom: 35px;
@@ -101,7 +102,8 @@ form footer > div a {
   font-size: 14px;
   color: #0033ff;
 }
-div.create-account > a:hover, form footer > div a:hover {
+div.create-account > a:hover,
+form footer > div a:hover {
   text-decoration: underline;
 }
 form footer > a {
@@ -124,7 +126,7 @@ form footer > a:nth-child(2):hover {
 }
 form footer > p:nth-child(3) {
   text-align: center;
-  padding: 15px 0px; 
+  padding: 15px 0px;
 }
 form footer > a:nth-child(4) {
   display: flex;
@@ -138,7 +140,7 @@ form footer > a:nth-child(4) {
   background-color: #fff;
 }
 form footer > a:nth-child(4):hover {
-  background-color: #e0dddd
+  background-color: #e0dddd;
 }
 form footer > a:nth-child(4) img {
   width: 20px;
@@ -148,7 +150,7 @@ form footer > a:nth-child(4) {
   margin-bottom: 50px;
 }
 
-@media screen and (max-width:450px) {
+@media screen and (max-width: 450px) {
   .login-page {
     width: 85%;
   }

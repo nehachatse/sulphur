@@ -27,12 +27,12 @@ function changeImgText() {
     } else {
       i = 0;
     }
-  } 
+  }
   //slideshow for small screen
   else {
     document.slide.src = imagesSmall[j];
     var t = document.getElementsByClassName("textSlide")[0];
-    var small = document.getElementsByClassName('small-screen-para')[0];
+    var small = document.getElementsByClassName("small-screen-para")[0];
     t.textContent = text[j];
     small.style.background = color[j];
     if (j < imagesSmall.length - 1) {
@@ -52,7 +52,6 @@ window.addEventListener("scroll", () => {
 
   header.classList.toggle("scrolling-active", windowPosition);
 });
-
 
 // header list on hover => appearing block
 var headerList = document.getElementsByClassName("header-list-hover");

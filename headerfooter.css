@@ -305,7 +305,6 @@ header > div .navbar-top-right a[name="log in"] {
   display: none;
 }
 
-
 /* Footer style for the Page */
 footer > div {
   width: 1110px;
@@ -388,7 +387,7 @@ footer div.footer-bottom div.social-media a:nth-child(3) img {
   header > div > a {
     margin-right: 30px;
   }
-  
+
   footer > div {
     width: 1000px;
   }
@@ -579,7 +578,6 @@ footer div.footer-bottom div.social-media a:nth-child(3) img {
 
 /* footer  */
 @media screen and (max-width: 990px) {
-
   footer > div {
     width: 95%;
   }
