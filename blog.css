@@ -113,9 +113,15 @@ body{
     color:mediumblue;
     cursor: pointer;
 }
+<<<<<<< HEAD
 .grid>div>h2{
     font-size: 27px;
     font-weight: 200;
+=======
+.grid>div>h2 {
+    font-size: 27px;
+    font-weight: 400;
+>>>>>>> 83625eac798f2a57d3888ab535990822846b0345
     cursor: pointer;
 }
 /* blog post's side area(ad & form) style starts here  */
