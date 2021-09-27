@@ -1,6 +1,8 @@
-## ***this should be run in any live server like visual studio code live server extension it has jquery*
+Project is hosted here - https://prashant-sharma-tws.github.io/sulphur/
 
 # sulphur
+
+### ***this should be run in any live server like visual studio code live server extension it has jquery*
 
 This is the first project our team got to make at masai - which is the <a href="https://unbounce.com/">Unbounce</a> website clone.
 
