@@ -1,18 +1,13 @@
-Project is hosted here - https://prashant-sharma-tws.github.io/sulphur/
-
 # sulphur
-
-### ***this should be run in any live server like visual studio code live server extension it has jquery*
-
-This is the first project our team got to make at masai - which is the <a href="https://unbounce.com/">Unbounce</a> website clone.
-
-Our team consist of three members.
+<hr>
+This is the first project our team got to make at masai - which is the <a href="https://unbounce.com/">Unbounce</a> website clone.<br>
+Project is hosted here - https://prashant-sharma-tws.github.io/sulphur/
 <hr>
 
-<h3>Below are team members and their responsibility:</h3>
+<h3>Team members and their responsibility:</h3>
 <p><b>1. Neha Chatse</b>     => Solution and Contact page.</p>
-<p><b>2. Sakline SK</b>      => Pricing and Blog page.</p>
-<p><b>3. Prashant Sharma</b> => The Landing page and Login page.</p>
+<p><b>2. Prashant Sharma</b> => The Landing page and Login page.</p>
+<p><b>3. Sakline SK</b>      => Pricing and Blog page.</p>
 <hr>
 
 <h3>Tech Stack used:</h3>
@@ -55,5 +50,7 @@ Our team consist of three members.
 <br>
 <img src="https://user-images.githubusercontent.com/63180404/130655759-029c02cc-bbc8-4484-a6e2-45a648d6d866.png" />
 <hr>
-
+## Note :
+### ***this should be run in any live server like visual studio code live server extension it has jquery*
+<hr>
 Thanks for taking a look to our project😊.
