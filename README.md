@@ -1,7 +1,7 @@
 # sulphur
 <hr>
 This is the first project our team got to make at masai - which is the <a href="https://unbounce.com/">Unbounce</a> website clone.<br>
-Project is hosted here - https://prashant-sharma-tws.github.io/sulphur/
+Project is hosted here -https://landing009.000webhostapp.com/unbounce.html
 <hr>
 
 <h3>Team members and their responsibility:</h3>
